@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Product Placement Analysis</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+            url('https://images.unsplash.com/photo-1557804506-669a67965ba0');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .btn-custom {
+            background-color: #0984e3;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: #0652DD;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-weight: 600;
+            color: #2d3436;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background: #0984e3;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .tableau-container {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-card {
+            text-align: center;
+            padding: 30px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .contact-card:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transform: translateY(-5px);
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            color: #0984e3;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #2d3436;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Strategic Product Placement Analytics</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#dashboard">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="#story">Story</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="home" class="hero-section">
+    <div class="container hero-content">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h1>Strategic Product Placement Analysis</h1>
+                <p>Analyzing brand positioning strategies, audience engagement metrics, and market impact to optimize product visibility and competitive advantage.</p>
+                <a href="#dashboard" class="btn btn-custom">View Strategic Insights</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <div class="section-title">
+            <h2>About The Project</h2>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0"
+                     class="img-fluid rounded shadow" alt="Analytics">
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+                <h4>Why Strategic Product Placement?</h4>
+                <p class="text-muted">
+                    Strategic product placement enables organizations to measure brand exposure,
+                    evaluate placement effectiveness, and improve return on marketing investments.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-3"><strong>Strategic Dashboard:</strong> Comprehensive view of brand frequency, media channels, and placement ROI.</li>
+                    <li class="mb-3"><strong>Insightful Story:</strong> Step-by-step narrative explaining placement patterns and growth trends.</li>
+                    <li><strong>Business Impact:</strong> Data-backed recommendations to enhance marketing performance and brand strategy.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="dashboard" class="bg-light">
+    <div class="container-fluid">
+        <div class="section-title">
+            <h2>Strategic Dashboard</h2>
+            <p>Interactive Analysis of Strategic Product Placement Data</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-11">
+                <div class="tableau-container">
+                    <div class='tableauPlaceholder' id='vizDashboard' style='position: relative'>
+    <noscript>
+        <a href='#'>
+            <img alt='Dashboard'
+                 src='https://public.tableau.com/static/images/PR/PRODUCTPLACEMENTANALYSISDashboard/Dashboard1/1_rss.png'
+                 style='border: none' />
+        </a>
+    </noscript>
+
+    <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https://public.tableau.com/' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='PRODUCTPLACEMENTANALYSISDashboard/Dashboard1' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image'
+               value='https://public.tableau.com/static/images/PR/PRODUCTPLACEMENTANALYSISDashboard/Dashboard1/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+    </object>
+</div>
+
+<script type='text/javascript'>
+    var divElement = document.getElementById('vizDashboard');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+
+    vizElement.style.width = '100%';
+    vizElement.style.height = '800px';
+
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="story">
+    <div class="container-fluid">
+        <div class="section-title">
+            <h2>Strategic Story</h2>
+            <p>Comprehensive Narrative on Placement Performance and Market Influence</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-11">
+                <div class="tableau-container">
+                    <div class='tableauPlaceholder' id='vizStory' style='position: relative'>
+    <noscript>
+        <a href='#'>
+            <img alt='Story'
+                 src='https://public.tableau.com/static/images/PR/PRODUCTPLACEMENTANALYSIS/Story1/1_rss.png'
+                 style='border: none' />
+        </a>
+    </noscript>
+
+    <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https://public.tableau.com/' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='PRODUCTPLACEMENTANALYSIS/Story1' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image'
+               value='https://public.tableau.com/static/images/PR/PRODUCTPLACEMENTANALYSIS/Story1/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+    </object>
+</div>
+
+<script type='text/javascript'>
+    var divElement = document.getElementById('vizStory');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+
+    vizElement.style.width = '100%';
+    vizElement.style.height = '800px';
+
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="bg-light">
+    <div class="container">
+        <div class="section-title">
+            <h2>Contact</h2>
+        </div>
+
+        <div class="row justify-content-center">
+    <div class="col-md-4 mb-4">
+        <div class="contact-card bg-white h-100 text-center">
+
+            <div class="contact-icon">Strategy</div>
+            <h5>T Durga Prasad</h5>
+            <p class="text-muted">Data Analyst</p>
+            <hr>
+
+            <a href="mailto:thenepallidurgaprasad@gmail.com"
+               style="text-decoration: underline; color: #0984e3;">
+                thenepallidurgaprasad@gmail.com
+            </a>
+
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p class="mb-0">© 2026 Strategic Product Placement Analysis. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
